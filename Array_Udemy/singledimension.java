@@ -1,4 +1,5 @@
 // Insertion in an array 
+// O(1) time complexity 
 
 public class singledimension {
     int arr[] = null;
@@ -25,14 +26,17 @@ public class singledimension {
         }
     
     
-        // public static void main(String[] args) {
-        //     singledimension obj = new singledimension(5);
-        //     obj.insert(0, 10);
-        //     obj.insert(1, 20);
-        //     obj.insert(2, 30);
-        //     obj.insert(1, 40);
-        //     obj.insert(4, 50);
-        // }
+    // Array Traversal
+    public void TraverseArray () {
+        try {
+            for (int i = 0; i < arr.length; i++) 
+            System.out.println(arr[i] + " ");
+        } catch(Exception e) {
+            System.out.println("Array no longer exists !!");
+        }
+        
+    }
+
     }
 
 
