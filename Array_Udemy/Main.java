@@ -10,7 +10,7 @@ class Main {
         obj.insert(12, 40);
         obj.insert(1, 30);
 
-
+        // Accessing array elements
         // time complexity : O(1)
         // space complexity : O(1)
         var element = obj.arr[0];  // insertElementname.arrayName[index]
@@ -21,6 +21,16 @@ class Main {
         // Array traversal
         System.out.println("Array Traversal : ");
         obj.TraverseArray();
+
+        //Array Searching
+        obj.SearchArray(10);
+        obj.SearchArray(60);
+
+        // Delete value from array
+        obj.DeleteValue(0);
+        System.out.println(obj.arr[0]);
+        obj.SearchArray(10);
+        obj.TraverseArray();  
 
 
     }
