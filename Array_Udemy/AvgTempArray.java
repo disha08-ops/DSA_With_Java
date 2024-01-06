@@ -15,9 +15,14 @@ class AvgTempArray {
         }
 
         double average = sum / totalDays;
-        
-        for(int i = 0; i<temp.length; i++){
-
+        int above = 0;
+        for(int i = 0; i<temps.length; i++){
+            if(temps[i]>average) {
+                above++;
+            }
         }
+        System.out.println();
+        System.out.println("Average temparature: "+average);
+        System.out.println(above + " days are above average");
     }
 }
